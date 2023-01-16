@@ -1,0 +1,7 @@
+name: Restart
+version: '${project.version}'
+main: me.tiskua.restart.main.Main
+
+commands:
+  Restartchecker:
+    description: Automatically restart/reload the server when a jar file is changed/added

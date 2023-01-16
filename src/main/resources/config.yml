@@ -1,0 +1,27 @@
+# // Options are 'reload' or 'restart'
+# // 'reload' runs the command 'rl' whenever reloading is necessary
+# // 'restart' runs the command 'restart' whenever reloading is necessary
+# // The 'restart' command is a lot better to use than reloading, but does stop and then start the server
+
+reload_type: "reload"
+
+# // This is when the server will reload. You can have it whenever
+# // a jar file is modified created (added to the directory)
+reload_on:
+  - "modify"
+  - "create"
+
+blacklist:
+  - "PlayerInfo"
+
+
+whitelist:
+  - ""
+
+# // How often changes are being detected (In seconds)
+# // The shorter the delay the more the server will lag
+
+check_interval: 5
+
+# // All permisions will be enabled or disabled
+use-permissions: false
